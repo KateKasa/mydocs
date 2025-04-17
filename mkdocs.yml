@@ -1,6 +1,11 @@
-site_name: Портал документации
+site_name: Портфолио технического писателя
 nav:
-  - Home: index.md
+  - Главная: index.md
   - Резюме: CV_Kasatkina.md
   - Пользовательская инструкция: user_guide.md
+  - Инструкция для техподдержки: support_guide.md
+  - API-документация: API-doc.md
 theme: windmill
+plugins:
+  - ezlinks:
+      wikilinks: true

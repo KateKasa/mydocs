@@ -1,17 +1,13 @@
 # Екатерина Касаткина
 Технический писатель
-Написать в Телеграм: [@kasatkina_kate](https://t.me/kasatkina_kate)
 
-## Обо мне
+На этом портале опубликованы примеры документации, которыми я могу поделиться:
+- [Пользовательская инструкция](user_guide.md)
+- [Инструкция для техподдержки](support_guide.md)
+- [API-документация](API-doc.md)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
 
-## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Связаться со мной в Телеграм: [@kasatkina_kate](https://t.me/kasatkina_kate)
+
+
