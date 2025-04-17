@@ -1,273 +1,140 @@
-
-
-
-
-
-
-
-
-
-<!DOCTYPE html lang="en">
-
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  
-  <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#111111" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#eeeeee" media="(prefers-color-scheme: dark)">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  
-
-  
-  <meta http-equiv="content-language" content="en">
   
   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="None">
+    
+    
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Портфолио технического писателя</title>
+    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 
-  
-  <title>Главная | Портфолио технического писателя</title>
-  
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap-3.3.7.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
+    
+      <script src="./js/elasticlunr.min.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '.';
+      var is_top_frame = (window === window.parent);
+        
+        var pageToc = [
+          {title: "\u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0430 \u041a\u0430\u0441\u0430\u0442\u043a\u0438\u043d\u0430", url: "#_top", children: [
+          ]},
+        ];
 
-  
-
-  
-  
-
-<link rel="stylesheet" href="css/bootstrap-icons.min.css">
-<link rel="stylesheet" href="css/theme.css">
-
-
-<link rel="stylesheet" href="css/colors/auto.css">
-<link rel="stylesheet" href="css/highlight/default.css" media="(prefers-color-scheme: light)">
-<link rel="stylesheet" href="css/highlight/monokai.css" media="(prefers-color-scheme: dark)">
-
-
-
-
-
-<script async>var base_url = '.';</script>
-<script src="js/jquery-3.6.1.slim.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script async src="js/highlight.min.js"></script>
-  
-  
-  
+    </script>
+    <script src="./js/base.js"></script> 
 </head>
 
-<body    <header>
-  <nav
-    class="navbar navbar-expand-sm navbar-toggleable-sm  border-bottom box-shadow mb-3 ">
-    <div class="container">
-      <a class="navbar-brand text-body" asp-area="" href=" /">
-        
-        
-        Портфолио технического писателя
-        
-      </a>
-      <div class="print-hide">
-        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-          <div class="d-none d-md-flex input-group mb-3">
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <nav class="navbar border-bottom box-shadow mb-3 d-md-none print-hide">
-    <div class="container">
-      <div class="navbar-collapse d-flex">
-        <p>
-        <div class="d-flex input-group mb-3">
-          
-          <button class="btn btn-outline-secondary" onclick="toggle_nav(this);" type="button" data-bs-toggle="collapse"
-            data-bs-target="#nav" title="Show Navigation"><i class="bi bi-book"></i></button>
-          
-          
-          <input class="form-control" id="searchbox_mobile" value="Портфолио технического писателя" readonly>
-          
-          
-          <button class="btn btn-outline-secondary" onclick="toggle_toc(this);" type="button" data-bs-toggle="collapse"
-            data-bs-target="#toc"><i class="bi bi-list-ul"></i></button>
-          
-        </div>
-        </p>
-      </div>
-    </div>
-  </nav>
-  </header>
-  
-  
-  
-  
-  <div class="container">
-    <div class="pb-3">
-      <div class="row">
-        
-        
-        
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
 
-<div class="col-12 col-md-2 print-hide">
-    <div class="collapse d-md-block text-nowrap" id="nav" style="overflow-x:scroll;">
-        <ul class="list-group list-group-flush">
-            
-            
-            <li class="list-group-item"><a
-                    class="text-decoration-none  text-body"
-                    href=".">Главная</a></li>
-            
-            
-            
-            <li class="list-group-item"><a
-                    class="text-decoration-none  text-muted"
-                    href="CV_Kasatkina/">Резюме</a></li>
-            
-            
-            
-            <li class="list-group-item"><a
-                    class="text-decoration-none  text-muted"
-                    href="user_guide/">Пользовательская инструкция</a></li>
-            
-            
-            
-            <li class="list-group-item"><a
-                    class="text-decoration-none  text-muted"
-                    href="support_guide/">Инструкция для техподдержки</a></li>
-            
-            
-            
-            <li class="list-group-item"><a
-                    class="text-decoration-none  text-muted"
-                    href="API-doc/">API-документация</a></li>
-            
-            
-        </ul>
-    </div>
-</div>
-        
-        
-        
-
-
-
-
-<div class="col-12 col-md-2 order-md-3 print-hide">
-  <div class="collapse d-md-block text-nowrap" id="toc" style="overflow-x:scroll;">
-    <span>In this article</span>
-    <hr />
-    <ul class="list-group list-group-flush">
-      
-      <li class="list-group-item"><a class="text-decoration-none text-muted" href="#_1">Екатерина Касаткина</a>
-        
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-
-<main role="main" class="col-12 col-md-8 print-main">
-  
-  
-  <h1 >Главная</h1>
-  
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item active" aria-current="page">Портфолио технического писателя</li>
-      
-      
-      <li class="breadcrumb-item active" aria-current="page">Главная</li>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </ol>
-  </nav>
-  
-  
-  <div class="container ml-0">
-    <div class="row">
-      
-      <div class="col-2 px-0" style="text-wrap: nowrap;">
-        
-        <a class="btn text-muted print-hide"><i class="bi bi-chevron-left"></i></a>
-        
-        
-        <a class="btn text-primary print-hide" href="CV_Kasatkina/" title="Резюме"><i
-            class="bi bi-chevron-right"></i></a>
-        
-      </div>
-      <div class="col px-0" style="text-align: right;">
-        
-        
-        
-        
-        
-        
-        <button class="btn print-visible d-none" onclick="print_normal();"
-          title="Open NewTab"><i class="bi bi-arrow-up-right-square"></i></button>
-      </div>
-      <div class="col-1 col-sm-2 px-0 print-hide" style="text-align: right;text-wrap: nowrap;">
-        
-        
-        <a class="btn disabled print-hide d-none d-sm-inline"><i class="bi bi-pencil"></i></a>
-        
-        
-        
-        <button class="btn print-block d-none d-lg-inline" title="Print this article"
-          onclick="window.print();"><i class="bi bi-printer"></i></button>
-        
-        <span class="dropdown print-hide">
-          <button class="btn btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-            aria-expanded="false"><i class="bi bi-list"></i></button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li>
-              <h6 class="dropdown-header">Share via</h6>
-            </li>
-            <li><button class="btn dropdown-item"
-                onclick="share_to_twitter('Главная | Портфолио технического писателя','');"><i
-                  class="bi bi-twitter-x"></i>&nbsp;X.com</button></li>
-            <li><button class="btn dropdown-item" onclick="share_to_facebook();"><i
-                  class="bi bi-facebook"></i>&nbsp;Facebook</button></li>
-            <li><button class="btn dropdown-item" onclick="share_to_line();"><i
-                  class="bi bi-line"></i>&nbsp;LINE</button></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><button class="btn dropdown-item" onclick="window.print();"><i class="bi bi-printer"></i>&nbsp;Print</button></li>
-            <li><button class="btn dropdown-item" id="page-url-copy-btn"><i class="bi bi-clipboard"></i>&nbsp;Copy Url to clipboard</button></li>
-            <li>
-              
-              
-              <a class="btn dropdown-item disabled"><i class="bi bi-pencil"></i>&nbsp;Edit this article</a>
-              
-              
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            
-            <li><button class="btn dropdown-item" onclick="print_view();"><i
-                  class="bi bi-file-earmark-text"></i>&nbsp;View in EmbedMode</button></li>
-          </ul>
-        </span>
-      </div>
-    </div>
-  </div>
-  
-  <hr />
-  
-  <div >
+<nav class="navbar wm-page-top-frame">
+  <div class="container-fluid wm-top-container">
     
+    <div class="wm-top-tool pull-right wm-vcenter">
+      <form class="dropdown wm-vcentered" id="wm-search-form" action="./search.html">
+        
+        <button id="wm-search-show" class="btn btn-sm btn-default" type="submit"
+          ><i class="fa fa-search" aria-hidden="true"></i></button>
+
+        <div class="input-group input-group-sm wm-top-search">
+          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search" autocomplete="off">
+          <span class="input-group-btn" role="search">
+            
+            <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+            <ul id="mkdocs-search-results" class="dropdown-menu dropdown-menu-right"></ul>
+            <button id="wm-search-go" class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </span>
+        </div>
+      </form>
+    </div>
+
+    
+    <div class="wm-top-tool wm-vcenter pull-right wm-small-left">
+      <button id="wm-toc-button" type="button" class="btn btn-sm btn-default wm-vcentered"><i class="fa fa-th-list" aria-hidden="true"></i></button>
+    </div>
+
+    
+    
+
+    
+    <a href="" class="wm-top-brand wm-top-link wm-vcenter">
+      
+      <div class="wm-top-title">
+        Портфолио технического писателя<br>
+        
+      </div>
+    </a>
+  </div>
+</nav>
+
+  <div id="main-content" class="wm-page-top-frame">
+    
+<nav class="wm-toc-pane">
+  
+  <ul class="wm-toctree">
+        <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">Главная</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="CV_Kasatkina/" class="wm-article-link wm-toc-text">Резюме</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="user_guide/" class="wm-article-link wm-toc-text">Пользовательская инструкция</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="support_guide/" class="wm-article-link wm-toc-text">Инструкция для техподдержки</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="API-doc/" class="wm-article-link wm-toc-text">API-документация</a>
+</li>
+  </ul>
+</nav>
+
+    <div class="wm-content-pane">
+      <iframe class="wm-article" name="article"></iframe>
+    </div>
+  </div>
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="CV_Kasatkina/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="CV_Kasatkina/" class="btn btn-xs btn-link">
+        Резюме
+      </a>
+    </div>
+    
+  </div>
+
+    
+
     <h1 id="_1">Екатерина Касаткина</h1>
 <p>Технический писатель</p>
 <p>На этом портале опубликованы примеры документации, которыми я могу поделиться:</p>
@@ -283,40 +150,39 @@
 </li>
 </ul>
 <p>Связаться со мной в Телеграм: <a href="https://t.me/kasatkina_kate">@kasatkina_kate</a></p>
-    
-  </div>
-</main>
 
-      </div>
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="CV_Kasatkina/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="CV_Kasatkina/" class="btn btn-xs btn-link">
+        Резюме
+      </a>
     </div>
-    <script src="js/theme.js"></script>
     
-    
-    
-    
-  </div>
   </div>
 
-  
-  
-  
-  
-  <footer class="border-top footer text-muted .position-absolute.bottom-0.start-50.translate-middle-x"
-    style="padding-top:15px;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md">
-          
-        </div>
-        
-      </div>
-    </div>
-  </footer>
-  
-  
-  
-  
-  
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
 </body>
-
 </html>
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2025-04-17 23:12:18.585822+00:00
+-->
