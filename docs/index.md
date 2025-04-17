@@ -1,8 +1,7 @@
-# Портал документации
-
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
+# Екатерина Касаткина
+Технический писатель
+Написать в Телеграм: [@kasatkina_kate](https://t.me/kasatkina_kate)
+## Обо мне
 
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.

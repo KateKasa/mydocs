@@ -1,5 +1,6 @@
 site_name: Портал документации
 nav:
   - Home: index.md
+  - Резюме: CV_Kasatkina.md
   - Пользовательская инструкция: user_guide.md
 theme: windmill
