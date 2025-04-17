@@ -5,7 +5,7 @@ nav:
   - Пользовательская инструкция: user_guide.md
   - Инструкция для техподдержки: support_guide.md
   - API-документация: API-doc.md
-theme: windmill
+theme: lantana
 plugins:
   - ezlinks:
       wikilinks: true
