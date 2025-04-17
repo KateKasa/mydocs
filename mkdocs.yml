@@ -1,0 +1,5 @@
+site_name: Портал документации
+nav:
+  - Home: index.md
+  - Пользовательская инструкция: user_guide.md
+theme: windmill
