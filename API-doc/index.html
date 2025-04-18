@@ -116,10 +116,10 @@ X5 Клуб.<br />
 Если у клиента есть действующая карта лояльности одной из торговых сетей X5 и клиент зарегистрирован в программе лояльности, в ответе возвращается <code>true</code>, если нет — <code>false</code>.  </li>
 </ul>
 <h3 id="_4">Пример запроса</h3>
-<p>curl --location "https://api..ru/.../xxx/check" \
-     --header "Content-Type: application/json" \
-     --header "Authorization: XXX" \
-     --data '{"mobile_phone":"+4ucEPLFgOXfdFrtjYYwz3CA=="}'</p>
+<p><code>curl --location "https://api..ru/.../xxx/check" 
+--header "Content-Type: application/json"  
+--header "Authorization: XXX"  
+--data '{"mobile_phone":"+4ucEPLFgOXfdFrtjYYwz3CA=="}'</code></p>
 <h3 id="_5">Пример ответа</h3>
 <p><code>{  "available": true}</code></p>
 <h3 id="_6">Формат и описание ошибок</h3>
