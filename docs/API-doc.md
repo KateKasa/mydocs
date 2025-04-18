@@ -40,10 +40,11 @@ X5 Клуб.
 
 ### Пример запроса
 
-curl --location "https://api..ru/.../xxx/check" \
-     --header "Content-Type: application/json" \
-     --header "Authorization: XXX" \
-     --data '{"mobile_phone":"+4ucEPLFgOXfdFrtjYYwz3CA=="}'
+`curl --location "https://api..ru/.../xxx/check" 
+--header "Content-Type: application/json"  
+--header "Authorization: XXX"  
+--data '{"mobile_phone":"+4ucEPLFgOXfdFrtjYYwz3CA=="}'`
+
 ### Пример ответа
 `{  "available": true}`
 ### Формат и описание ошибок
